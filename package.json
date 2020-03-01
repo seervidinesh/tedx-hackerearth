@@ -1,0 +1,27 @@
+{
+  "name": "tedx-hackerearth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "nodemon index.js",
+    "start-client": "cd client && npm start",
+    "serve": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "clint-ins": "cd client && npm install",
+    "server-ins": "npm install"
+  },
+  "author": "Dinesh Seervi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2",
+    "validator": "^12.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
